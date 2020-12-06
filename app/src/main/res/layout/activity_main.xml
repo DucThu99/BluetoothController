@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/teal_700"
+        android:elevation="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_bt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:text="@string/txt_bt_name"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txt_bt_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/txt_bt_add" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_light1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:onClick="onClickSwitchLight1"
+                    android:src="@drawable/light_off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/txt_light_1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_light2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="32dp"
+                    android:onClick="onClickSwitchLight2"
+                    android:src="@drawable/light_off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_light_2"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_fan"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:onClick="onClickSwitchFan"
+                    android:src="@drawable/fan_off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_fan"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_socket"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="32dp"
+                    android:onClick="onClickSwitchSocket"
+                    android:src="@drawable/socket_off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_socket"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gts"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/txt_app_info"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

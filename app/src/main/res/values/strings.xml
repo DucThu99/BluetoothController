@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BluetoothController</string>
+    <string name="app_bar_title">Trần Đức Thư \'s Controller</string>
+    <string name="txt_bt_name">Tên thiết bị Bluetooth</string>
+    <string name="txt_app_info">Developed by Trần Đức Thư</string>
+    <string name="txt_bt_add">Địa chỉ MAC</string>
+    <string name="action_reload_bt">Chọn thiết bị Bluetooth</string>
+    <string name="dialog_pick_a_bt">Chọn thiết bị Bluetooth</string>
+    <string name="txt_light_1">Đèn 1</string>
+    <string name="txt_light_2">Đèn 2</string>
+    <string name="txt_fan">Quạt</string>
+    <string name="txt_socket">Ổ Cắm</string>
+</resources>
